@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>#myChart {
+  max-width: 400px;
+  max-height: 200px;
+  margin: auto;
+}</style>
+</head>
+<body>
+  <h1>Podaj swoje imie i rok urodzenia</h1>
+  <form id="person-form">
+    <input type="text" id="name-input" placeholder="Wpisz Imie" required />
+    <input type="number" id="year-input" placeholder="Wpisz rok urodzenia" min="1900" required />
+    <button type="submit">Potwierdź</button>
+  </form>
+  <div id="output"></div>
+   <!-- <h1>Moja lista zadań</h1>
+  
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Wpisz zadanie" required />
+    <button type="submit">Dodaj</button>
+  </form>
+
+ <ol id="todo-list"></ol>
+
+  <script type="module" src="/src/main.js"></script>
+  <br/> -->
+  <div id="more-info" style="display: none;">
+    <form id="birthday-form">
+      <input type="number" id="month-input" placeholder="Wpisz miesiąc" max="12" min="1" required />
+      <input type="number" id="day-input" placeholder="Wpisz dzień" min="1" max="31" required/>
+      <button type="submit">Potwierdź</button>
+    </form>
+  </div>
+  <div id="output2"></div>
+  <script type="module" src="/src/test.js"></script>
+  <canvas id="myChart" width="400" height="200" style="display: none;"></canvas>
+  <div id="map" style="height: 800px; width: 100%; margin-top: 20px; display: none;"></div>
+</body>
+</html>
